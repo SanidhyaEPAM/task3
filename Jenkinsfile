@@ -9,7 +9,7 @@ pipeline {
         PORT = "${env.BRANCH_NAME == 'main' ? '3000' : '3001'}"
         IMAGE = "${env.BRANCH_NAME == 'main' ? 'nodemain:v1.0' : 'nodedev:v1.0'}"
         CONTAINER = "${env.BRANCH_NAME == 'main' ? 'main-container' : 'dev-container'}"
-        DOCKER_REPO = "tanaybansal"
+        DOCKER_REPO = "sanidhya13"
     }
 
     stages {
